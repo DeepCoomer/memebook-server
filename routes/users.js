@@ -4,6 +4,7 @@ import grid from "gridfs-stream";
 import mongoose from "mongoose";
 import upload from "../utils/upload.js";
 import { User } from "../models/User.js";
+import cloudinary from "cloudinary";
 
 const router = express.Router();
 
