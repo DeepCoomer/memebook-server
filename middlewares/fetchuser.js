@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const JWT_Secret = "Ewepasgsg$oy";
+const JWT_Secret = process.env.JWT_Secret;
 
 const fetchuser = (req, res, next) => {
     // Get the user from the jwt token and add id to req object
